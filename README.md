@@ -131,3 +131,26 @@ These scenarios will be documented after testing.
 ## Project Scope
 
 This is a simulated enterprise environment created for independent technical training and portfolio development. It does not represent production infrastructure or professional employer systems.
+
+
+## Lab Validation & Screenshots
+
+### 1. Domain Authentication
+Successfully authenticated to the `ad.northstar.test` domain using the employee account `ad\jmitchell`.
+
+![Domain Authentication](Domain%20authentication.png)
+
+### 2. Security Group Membership
+Verified that Jordan Mitchell belongs to the `GG_HR_Employees` Active Directory security group.
+
+![Security Group Membership](Security%20group%20membership.png)
+
+### 3. Authorized HR Access
+Successfully accessed the confidential HR share and created `HR-Access-Test.txt` using an authorized HR employee account.
+
+![Authorized Access](Authorized%20access.png)
+
+### 4. Unauthorized Access Denied
+Attempted to access the HR confidential share using a Sales employee account without HR group membership. Access was denied, validating least-privilege permissions.
+
+![Unauthorized Access Denied](Unauthorized%20access%20denied.png)
